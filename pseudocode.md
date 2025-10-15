@@ -50,7 +50,7 @@ def compute_five_prime(flag: int, pos: int, cigar: str) -> int:
 
 
 
-
+### Code logic
 
 Make a set of valid UMI
 
