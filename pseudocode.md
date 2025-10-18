@@ -4,10 +4,10 @@ PCR duplicates are a problem because they inflate coverage and lead to overestim
 ## **Pseudocode**
 ### High level functions
 
+```
 def determine_strand(flag:int) ->string 
 '''This function is taking in the flag and giving us the strand'''        
 
-```
 Determine the strand using the the flag
     if ((flag & 16) == 16):
         Strand = negative
@@ -22,7 +22,7 @@ return strand
       strand = negative
 ```      
 
-
+```
 def compute_five_prime(flag: int, pos: int, cigar: str) -> int:
     """
     This function figures out where the first base of the read (in the read’s
@@ -30,7 +30,7 @@ def compute_five_prime(flag: int, pos: int, cigar: str) -> int:
     orientation, how far the alignment extends along the reference, and whether part of
     the read was soft-clipped off the start or end.
     """ 
-```
+
      Take into account soft clipping 
         s_left = length of leading soft clip, so if CIGAR starts with S
         s_right = length of trailing soft clip, so if CIGAR end with S
