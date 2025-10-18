@@ -56,7 +56,7 @@ def compute_five_prime(flag: int, pos: int, cigar: str) -> int:
 ```
 
 ### Code logic
-
+```
 Make a set of valid UMI
 
 Initialize temp variable(current_chrom) to store current chromosome number
@@ -100,3 +100,4 @@ if this mini_key is not in my set:
 else:
     Keep going
 
+```
